@@ -7,11 +7,11 @@ werden verschiedene Konzepte und Programmiertechniken eingeführt.
 
 ## Überblick
 
-### [Einzelne Zahl einlesen](01-einzeln)
+### [Einzelne Zahl einlesen](01-einzelne_zahl)
 
 Fragt den Benutzer nach einer Zahl und gibt diese wieder aus.
 
-### [Drei Zahlen einlesen](02-mehrere)
+### [Drei Zahlen einlesen](02-mehrere_zahlen)
 
 Fragt den Benutzer nach drei Zahlen und gibt deren Summe aus.
 Verwendet dabei *Variablen*, um die einzelnen Zahlen zu speichern und zu addieren.
