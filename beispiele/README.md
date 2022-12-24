@@ -8,7 +8,7 @@ In diesem Verzeichnis befinden sich eine Reihe von Programmen, die als Beispiele
 
 Traditionell das erste Programm beim Lernen einer Programmiersprache.
 
-### [Grundlagen](eingabe_zahlen)
+### [Grundlagen](grundlagen)
 
 Eine Reihe von Programmen, die aufeinander aufbauend grundlegende Konzepte einführen.
 
