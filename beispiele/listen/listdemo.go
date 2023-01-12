@@ -2,6 +2,7 @@ package listen
 
 import "fmt"
 
+// Erzeugt Listen (Slices) vom Typ `int` und demonstiert, wie man damit umgehen kann.
 func IntListDemo() {
 
 	// Erzeuge zwei leere Listen für Zahlen auf verschiedene Art:
