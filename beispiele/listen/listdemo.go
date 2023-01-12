@@ -61,7 +61,7 @@ func IntListDemo() {
 	fmt.Println(product_list3)
 }
 
-// Erzeugt Listen (Slices) vom Typ `int` und demonstiert, wie man damit umgehen kann.
+// Erzeugt Listen (Slices) vom Typ `string` und demonstiert, wie man damit umgehen kann.
 func StringListDemo() {
 	// Erzeuge eine leere String-Liste:
 	list1 := []string{}
