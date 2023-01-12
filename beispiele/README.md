@@ -15,3 +15,7 @@ Eine Reihe von Programmen, die aufeinander aufbauend grundlegende Konzepte einf√
 ### [Roulette](roulette)
 
 Anwendung und Vertiefung der Grundlagen anhand eines einfachen Roulette-Spiels.
+
+### [Listen](listen)
+
+Beispiele zur Definition und Verwendung von Listen-Datentypen.
