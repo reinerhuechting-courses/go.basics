@@ -137,3 +137,28 @@ func SlicingDemo() {
 	// Die Liste ausgeben:
 	fmt.Println(list1)
 }
+
+// Erzeugt und manipuliert 2D-Listen.
+func List2DDemo() {
+	// Erzeuge eine 3x3-Matrix:
+	matrix1 := [][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
+
+	// Die Matrix ausgeben:
+	fmt.Println(matrix1)
+
+	// Die mittlere Zeile der Matrix ausgeben:
+	fmt.Println(matrix1[1])
+
+	// Die Matrix zeilenweise ausgeben:
+	for _, row := range matrix1 {
+		fmt.Println(row)
+	}
+
+	// Das mittlere Element ausgeben:
+	fmt.Println(matrix1[1][1])
+
+	// Das erste Element der mittleren Zeile ändern und die Matrix ausgeben:
+	matrix1[1][0] = 1111
+	fmt.Println(matrix1)
+
+}
