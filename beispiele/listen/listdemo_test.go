@@ -25,3 +25,14 @@ func ExampleIntListDemo() {
 	// 284
 	// 5602905000
 }
+
+func ExampleStringListDemo() {
+	StringListDemo()
+
+	// Output:
+	// [Hallo ihr vielen Strings.]
+	// Hallo
+	// vielen
+	// Strings.
+	// [vielen Strings.]
+}

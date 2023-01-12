@@ -60,3 +60,35 @@ func IntListDemo() {
 	// Das Ergebnis ausgeben:
 	fmt.Println(product_list3)
 }
+
+// Erzeugt Listen (Slices) vom Typ `int` und demonstiert, wie man damit umgehen kann.
+func StringListDemo() {
+	// Erzeuge eine leere String-Liste:
+	list1 := []string{}
+
+	// Hänge Elemente an:
+	list1 = append(list1, "Hallo")
+	list1 = append(list1, "ihr")
+	list1 = append(list1, "vielen")
+	list1 = append(list1, "Strings.")
+
+	// Liste ausgeben:
+	fmt.Println(list1)
+
+	// Alle Strings aus `list1` ausgeben, deren Länge größer als 4 ist:
+	for _, element := range list1 {
+		if len(element) > 4 {
+			fmt.Println(element)
+		}
+	}
+
+	// Alle Strings aus `list1` in eine neue Liste kopieren, deren Länge größer als 5 ist:
+	list2 := []string{}
+	for _, element := range list1 {
+		if len(element) > 5 {
+			list2 = append(list2, element)
+		}
+	}
+	// Die neue Liste ausgeben:
+	fmt.Println(list2)
+}
