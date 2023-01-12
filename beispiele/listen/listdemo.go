@@ -92,3 +92,48 @@ func StringListDemo() {
 	// Die neue Liste ausgeben:
 	fmt.Println(list2)
 }
+
+// Demonstriert, wie man Ausschnitte aus anderen Listen holt und damit arbeitet.
+func SlicingDemo() {
+	// Eine Liste von Zahlen erstellen:
+	list1 := []int{11, 22, 33, 44, 55, 66, 77, 88, 99}
+
+	// Einen Ausschnitt aus `list1` wählen und als `list2` speichern:
+	list2 := list1[2:5]
+
+	// `list2` ausgeben:
+	fmt.Println(list2)
+
+	// Ein Element von `list2` verändern:
+	list2[0] = 42
+
+	// Beide Listen ausgeben.
+	// Beachte: Es haben sich beide geändert!
+	fmt.Println(list1)
+	fmt.Println(list2)
+
+	// Alle Elemente aus `list1` ausgeben, außer dem ersten und dem letzten Element:
+	for _, v := range list1[1 : len(list1)-1] {
+		fmt.Println(v)
+	}
+
+	// Alle Elemente aus `list1` verdoppeln, außer dem ersten und dem letzten Element:
+	for i := range list1[1 : len(list1)-1] {
+		list1[i+1] *= 2
+	}
+	// Die Liste ausgeben:
+	fmt.Println(list1)
+
+	// Das Element an Stelle 3 aus `list1` löschen:
+	list1 = append(list1[:3], list1[4:]...)
+	// Die Liste ausgeben:
+	fmt.Println(list1)
+
+	// Ein Element in List an Stelle 4 einfügen:
+	end := []int{}
+	end = append(end, list1[4:]...)
+	list1 = append(list1[:4], 3333)
+	list1 = append(list1, end...)
+	// Die Liste ausgeben:
+	fmt.Println(list1)
+}
